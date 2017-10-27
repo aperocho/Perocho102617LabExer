@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perocho.perocho102617labexer.MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:text="NAME:"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="94dp" />
+
+    <TextView
+        android:id="@+id/text_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD:"
+        android:textSize="24sp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/text_name"
+        android:layout_alignLeft="@+id/text_name"
+        android:layout_alignStart="@+id/text_name" />
+
+    <EditText
+        android:id="@+id/eText_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_pass"
+        android:layout_toEndOf="@+id/text_pass"
+        android:layout_toRightOf="@+id/text_pass"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="secret" />
+
+    <EditText
+        android:id="@+id/eText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text_name"
+        android:layout_toEndOf="@+id/text_pass"
+        android:layout_toRightOf="@+id/text_pass"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="John" />
+
+    <Button
+        android:id="@+id/btn_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eText_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="shared"
+        android:text="SHARED PREFERENCES" />
+
+    <Button
+        android:id="@+id/btn_internal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_shared"
+        android:layout_alignStart="@+id/btn_shared"
+        android:layout_below="@+id/btn_shared"
+        android:layout_marginTop="37dp"
+        android:onClick="store"
+        android:text="INTERNAL STORAGE" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_internal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="next"
+        android:text="NEXT" />
+
+</RelativeLayout>

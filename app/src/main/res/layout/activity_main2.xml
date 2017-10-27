@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perocho.perocho102617labexer.MainActivity">
+
+    <Button
+        android:id="@+id/btn_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="load"
+        android:text="LOAD SHARED PREFERENCES" />
+
+    <Button
+        android:id="@+id/btn_internal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_clr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="store"
+        android:text="LOAD INTERNAL STORAGE" />
+
+    <Button
+        android:id="@+id/btn_clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_internal"
+        android:layout_alignStart="@+id/btn_internal"
+        android:layout_centerVertical="true"
+        android:onClick="btnClr"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/btn_bck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignEnd="@+id/btn_shared"
+        android:layout_alignRight="@+id/btn_shared"
+        android:onClick="btnBck"
+        android:text="BACK" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_clr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="TextView" />
+
+</RelativeLayout>
